@@ -177,16 +177,6 @@ for embeddings since adjacent time steps are highly correlated.
 | Max epochs | 15 (early stopping) |
 | Optimizer | Adam (lr=0.001) |
 
----
-
-## How to Run
-
-1. Open `model2_rnn_lstm_gru.ipynb` in Google Colab (GPU recommended)
-2. Run all cells in order
-3. Training takes ~10–20 min per model on CPU; ~3–5 min on GPU
-
-### Runtime Note
-Enable GPU in Colab: `Runtime → Change runtime type → T4 GPU`
 
 ### Requirements
 ```
