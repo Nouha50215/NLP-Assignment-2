@@ -1,0 +1,24 @@
+{
+  "model": "Optimized MLP (TF-IDF + Sentiment Features)",
+  "test_accuracy": 0.8856,
+  "roc_auc": 0.9555,
+  "classification_report": "              precision    recall  f1-score   support\n\n    negative       0.90      0.87      0.88      4940\n    positive       0.88      0.90      0.89      4977\n\n    accuracy                           0.89      9917\n   macro avg       0.89      0.89      0.89      9917\nweighted avg       0.89      0.89      0.89      9917\n",
+  "optimizer_comparison": {
+    "adam": 0.8836,
+    "sgd": 0.8798,
+    "rmsprop": 0.8868
+  },
+  "hyperparameters": {
+    "hidden_layers": [
+      256,
+      128,
+      64
+    ],
+    "dropout_rate": 0.3,
+    "batch_size": 256,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_normalization": true,
+    "early_stopping_patience": 5
+  }
+}
