@@ -1,28 +1,26 @@
 # Assignment 2 — Sentiment Analysis: Model Improvement
 
-**Dataset:** [IMDB Movie Reviews (50K)](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
-**Task:** Binary sentiment classification (positive / negative)
-**Baseline (Assignment 1):** MLP with 5 VADER + TextBlob features → **77.42% accuracy**
+Dataset: [IMDB Movie Reviews (50K)](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+Task: Binary sentiment classification (positive / negative)
+Baseline (Assignment 1): MLP with 5 VADER + TextBlob features → **77.42% accuracy**
 
 ---
 
 ## Repository Structure
 
-```
-├── model1_optimized_mlp.ipynb      ← Model 1 notebook
-├── README_model1_mlp.md            ← Model 1 README
-├── results_model1_mlp.json         ← Model 1 results
+├── model1_optimized_mlp.ipynb      Model 1 notebook
+├── README_model1_mlp.md            Model 1 README
+├── results_model1_mlp.json         Model 1 results
 │
-├── model2_rnn_lstm_gru.ipynb       ← Model 2 notebook
-├── README_model2_rnn.md            ← Model 2 README
-├── results_model2_rnn.json         ← Model 2 results (LSTM + GRU)
+├── model2_rnn_lstm_gru.ipynb       Model 2 notebook
+├── README_model2_rnn.md            Model 2 README
+├── results_model2_rnn.json         Model 2 results (LSTM + GRU)
 │
-├── model3_cnn_1d.ipynb             ← Model 3 notebook
-├── README_model3_cnn.md            ← Model 3 README
-├── results_model3_cnn.json         ← Model 3 results (CNN variants)
+├── model3_cnn_1d.ipynb             Model 3 notebook
+├── README_model3_cnn.md            Model 3 README
+├── results_model3_cnn.json         Model 3 results (CNN variants)
 │
-└── README.md                       ← This file
-```
+└── README.md                      
 
 ---
 
