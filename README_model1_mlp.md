@@ -140,18 +140,8 @@ The following hyperparameters were explored:
 | ROC-AUC | See `results_model1_mlp.json` |
 | Best Optimizer | Adam |
 
-**Improvement over Assignment 1 baseline (77.42%):** See results file.
-
----
-
-## How to Run
-
-1. Open `model1_optimized_mlp.ipynb` in Google Colab
-2. Run all cells in order (top → bottom)
-3. Results will be saved automatically as JSON and PNG files
-
 ### Requirements
-```
+``` 
 tensorflow>=2.13
 scikit-learn>=1.3
 nltk
