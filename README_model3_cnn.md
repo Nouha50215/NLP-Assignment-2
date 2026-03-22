@@ -176,16 +176,6 @@ CNNs are often preferred for sentiment tasks because:
 | Max epochs | 20 (early stopping) |
 | Optimizer | Adam (lr=0.001) |
 
----
-
-## How to Run
-
-1. Open `model3_cnn_1d.ipynb` in Google Colab
-2. Run all cells top-to-bottom
-3. Simple CNN trains in ~5 min; Multi-Scale CNN ~8 min (CPU)
-
-**GPU recommended for faster training:**
-`Runtime → Change runtime type → T4 GPU`
 
 ### Requirements
 ```
