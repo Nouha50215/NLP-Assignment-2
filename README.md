@@ -8,19 +8,16 @@ Baseline (Assignment 1): MLP with 5 VADER + TextBlob features → **77.42% accur
 
 ## Repository Structure
 
-├── model1_optimized_mlp.ipynb      Model 1 notebook
-├── README_model1_mlp.md            Model 1 README
-├── results_model1_mlp.json         Model 1 results
-│
-├── model2_rnn_lstm_gru.ipynb       Model 2 notebook
-├── README_model2_rnn.md            Model 2 README
-├── results_model2_rnn.json         Model 2 results (LSTM + GRU)
-│
-├── model3_cnn_1d.ipynb             Model 3 notebook
-├── README_model3_cnn.md            Model 3 README
-├── results_model3_cnn.json         Model 3 results (CNN variants)
-│
-└── README.md                      
+model1_optimized_mlp.ipynb:     Model 1 notebook,
+README_model1_mlp.md:            Model 1 README,
+results_model1_mlp.json:         Model 1 results,
+model2_rnn_lstm_gru.ipynb:       Model 2 notebook,
+README_model2_rnn.md:            Model 2 README,
+results_model2_rnn.json:         Model 2 results (LSTM + GRU),
+model3_cnn_1d.ipynb:             Model 3 notebook,
+README_model3_cnn.md:            Model 3 README,
+results_model3_cnn.json:         Model 3 results (CNN variants),
+README.md                      
 
 ---
 
@@ -86,33 +83,12 @@ Both use **pretrained GloVe-100 embeddings** via Gensim with fine-tuning.
 | 1D CNN | Model 3 |
 | Pretrained Word2Vec/GloVe embeddings | Models 2 & 3 (Gensim) |
 
----
-
-## Results Comparison
-
-| Model | Architecture | Key Feature | Test Accuracy | AUC |
-|-------|-------------|-------------|---------------|-----|
-| Baseline (Assign. 1) | MLP (64,32) | VADER + TextBlob (5 features) | 77.42% | — |
-| Model 1 | MLP (256,128,64) + BN + Dropout | TF-IDF + Sentiment | see JSON | see JSON |
-| Model 2a | Bidirectional LSTM | GloVe-100 embeddings | see JSON | see JSON |
-| Model 2b | Bidirectional GRU | GloVe-100 embeddings | see JSON | see JSON |
-| Model 3a | Simple 1D CNN | GloVe-100 embeddings | see JSON | see JSON |
-| Model 3b | Multi-Scale CNN (TextCNN) | GloVe-100 embeddings | see JSON | see JSON |
-
-*Run the notebooks to populate the results JSON files.*
-
----
 
 ## How to Run All Models
 
-All notebooks are designed for **Google Colab**. For Models 2 and 3, enabling
-a GPU runtime will significantly reduce training time.
-
-### Steps:
-1. Open notebook in Google Colab
-2. Enable GPU: `Runtime → Change runtime type → T4 GPU` (recommended for Models 2 & 3)
-3. Run all cells top to bottom (`Runtime → Run all`)
-4. Results are saved as `.json` files and plots as `.png` files
+All notebooks are designed in **Google Colab**. For Models 2 and 3, require
+a GPU runtime to significantly reduce training time.
+Results are saved as `.json` files and plots as `.png` files
 
 ### Global Requirements
 ```
