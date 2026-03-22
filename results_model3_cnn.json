@@ -1,0 +1,27 @@
+{
+  "CNN_Simple": {
+    "test_accuracy": 0.8984,
+    "roc_auc": 0.9614,
+    "classification_report": "              precision    recall  f1-score   support\n\n    negative       0.90      0.89      0.90      4940\n    positive       0.89      0.90      0.90      4977\n\n    accuracy                           0.90      9917\n   macro avg       0.90      0.90      0.90      9917\nweighted avg       0.90      0.90      0.90      9917\n"
+  },
+  "CNN_MultiScale": {
+    "test_accuracy": 0.8379,
+    "roc_auc": 0.9199,
+    "classification_report": "              precision    recall  f1-score   support\n\n    negative       0.86      0.81      0.83      4940\n    positive       0.82      0.87      0.84      4977\n\n    accuracy                           0.84      9917\n   macro avg       0.84      0.84      0.84      9917\nweighted avg       0.84      0.84      0.84      9917\n"
+  },
+  "hyperparameters": {
+    "vocab_size": 20000,
+    "max_len": 256,
+    "embedding_dim": 100,
+    "pretrained_embeddings": "GloVe-100 (gensim)",
+    "filters": 128,
+    "kernel_sizes": [
+      2,
+      3,
+      5
+    ],
+    "dropout": 0.3,
+    "batch_size": 128,
+    "optimizer": "Adam"
+  }
+}
